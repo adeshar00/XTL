@@ -1,0 +1,44 @@
+
+
+
+<xs k="template">Title: <xpi k="title"/>
+Author: <xpi k="auth"/>
+<xpi k="thing"/>
+<xpi k ="content"/></xs>
+
+<xmain>
+
+	<xs k="thing">The message is as follows:</xs>
+
+	<xpush>
+		<xs k="title">My Title</xs>
+		<xs k="auth">John Doe</xs>
+		<xs k="content">I love stuff!</xs>
+		<xs k="filepath">f/g</xs>
+		<xout><xpi k="template"/></xout>
+	</xpush>
+
+	<xpush>
+		<xs k="title">Meesa make doodoo</xs>
+		<xs k="auth">Jar Jar Binx</xs>
+		<xs k="content">WOOOOO!!!!!</xs>
+		<xout><xpi k="template"/></xout>
+	</xpush>
+
+	<xpush>
+		<xs k="title">My Second Title</xs>
+		<xs k="auth">John Doe</xs>
+		<xs k="content">I love more stuff!</xs>
+		<xs k="filepath">g</xs>
+		<xout filePathKey="filepath"><xpi k="template"/></xout>
+	</xpush>
+
+	<xout>
+	<md>
+#This should be wrapped in header tags
+
+This is a paragraph used to test the markdown addon, with [link text](linkDomain.com).
+	</md>
+	</xout>
+
+</xmain>

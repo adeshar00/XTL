@@ -1,0 +1,2 @@
+rm -rf out
+python3 src in -o out -lmd
